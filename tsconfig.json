@@ -1,0 +1,34 @@
+{
+	"compilerOptions": {
+		"outDir": "./build/src",
+		"baseUrl": "./src",
+		"paths": {
+			"src/*": [
+				"./*"
+			]
+		},
+		"experimentalDecorators": true,
+		"forceConsistentCasingInFileNames": true,
+		"noImplicitAny": true,
+		"noImplicitThis": true,
+		"noImplicitReturns": true,
+		"strictFunctionTypes": true,
+		"alwaysStrict": true,
+		"strictNullChecks": true,
+		"downlevelIteration": true,
+		"incremental": true,
+		"target": "ES6",
+		"moduleResolution": "node",
+		"lib": [
+			"es6", "es2015", "dom"
+		],
+		"plugins": [
+			{
+				"transform": "@zerollup/ts-transform-paths"
+			}
+		]
+	},
+	"include": [
+		"src/**/*"
+	]
+}
